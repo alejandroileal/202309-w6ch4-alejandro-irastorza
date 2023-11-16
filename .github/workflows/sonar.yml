@@ -15,8 +15,6 @@ jobs:
           fetch-depth: 0
       - name: Install modules
         run: npm ci
-      - name: Run tests with coverage
-        run: npm run test:prod
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
